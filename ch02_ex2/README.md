@@ -16,3 +16,27 @@
 
 > `WebSecurityConfigurerAdapter`클래스는 더이상 사용되지 않는다.
 > `UserDetailService`는 Override 하지 않고 그냥 Bean으로만 등록하면 된다.
+
+
+## 엔드포인트 권한부여 재정의
+```java
+    @Bean
+    public SecurityFilterChain securityFilterChain(final HttpSecurity http) throws Exception {
+        
+        // 1. 인증 설정
+        http.authorizeHttpRequests(auth -> auth
+                        .anyRequest()       // 모든 요청에 대해서
+                        .permitAll()        // 인증이 필요함을 선언
+                )
+                .httpBasic(withDefaults());
+
+        // 2. 인증 없이 권한 허용
+        http.authorizeHttpRequests(auth -> auth
+                        .anyRequest()       // 모든 요청에 대해서
+                        .permitAll()        // 인증 없이 권한을 허용
+                )
+                .httpBasic(withDefaults());
+        
+        return http.build();
+    }
+```
