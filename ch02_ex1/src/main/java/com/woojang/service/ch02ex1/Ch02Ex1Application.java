@@ -1,4 +1,4 @@
-package com.woojang.service.ch02_ex1;
+package com.woojang.service.ch02ex1;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
