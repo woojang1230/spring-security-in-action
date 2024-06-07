@@ -28,4 +28,12 @@ public class ProjectConfig extends WebSecurityConfigurerAdapter {
     public PasswordEncoder passwordEncoder() {
         return NoOpPasswordEncoder.getInstance();
     }
+
+    @Override
+    protected void configure(final HttpSecurity http) throws Exception {
+        http.httpBasic();
+        http.authorizeRequests()
+                .anyRequest()
+                .permitAll();
+    }
 }

@@ -13,3 +13,22 @@
 > ```shell
 > java.lang.IllegalArgumentException: There is no PasswordEncoder mapped for the id "null"
 > ```
+
+
+## 엔드포인트 권한부여 재정의
+```java
+    @Override
+    protected void configure(final HttpSecurity http) throws Exception {
+        http.httpBasic();
+        
+        // 1. 인증 설정
+        http.authorizeRequests()
+                .anyRequest()           // 모든 요청에 대해서
+                .authenticated();       // 인증이 필요함을 선언
+
+        // 2. 인증 없이 권한 허용
+        http.authorizeRequests()
+                .anyRequest()           // 모든 요청에 대해서
+                .permitAll();           // 인증 없이 권한을 허용
+    }
+```
