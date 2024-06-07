@@ -1,0 +1,2 @@
+rootProject.name = 'spring-security-in-action'
+include 'ch02_ex1'
