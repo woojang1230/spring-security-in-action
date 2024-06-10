@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: ssis-ch02-ex5
+server:
+  port: 8085
