@@ -26,7 +26,7 @@
         // 1. 인증 설정
         http.authorizeHttpRequests(auth -> auth
                         .anyRequest()       // 모든 요청에 대해서
-                        .permitAll()        // 인증이 필요함을 선언
+                        .authenticated()    // 인증이 필요함을 선언
                 )
                 .httpBasic(withDefaults());
 
