@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: ssis-ch03-ex2
+  datasource:
+    url: jdbc:h2:mem:ssia/spring
+    username: sa
+    password:
+    initialization-mode: always
+    driver-class-name: org.h2.Driver
+server:
+  port: 8092
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG
