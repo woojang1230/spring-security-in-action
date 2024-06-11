@@ -40,7 +40,7 @@ public class CustomAuthenticationProvider implements AuthenticationProvider {
 
     @Override
     public boolean supports(final Class<?> authentication) {
-        // 위 함수에서 반환하는 객체 타입을 추가?
+        // Authentication 객체의 클래스 타입이 UsernamePasswordAuthenticationToken과 같은지 또는 그 하위 클래스인지 확인
         return UsernamePasswordAuthenticationToken.class.isAssignableFrom(authentication);
     }
 }
@@ -49,4 +49,4 @@ public class CustomAuthenticationProvider implements AuthenticationProvider {
 
 1. `authentication.getName()` : 사용자 ID를 꺼낸다.
 2. `authentication.getCredentials().toString()` : Password를 꺼낸다.
-3. `new UsernamePasswordAuthenticationToken(username, password, Collections.emptyList())` : 
+3. `new UsernamePasswordAuthenticationToken(username, password, Collections.emptyList())` : `Authentication` 객체 생성 및 반환.
