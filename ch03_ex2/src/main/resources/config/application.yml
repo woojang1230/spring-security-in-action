@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: ssis-ch03-ex2
+  datasource:
+    url: jdbc:mysql://localhost:3306/spring
+    username: root
+    password: password
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  sql:
+    init:
+      mode: always
+server:
+  port: 8092
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG
