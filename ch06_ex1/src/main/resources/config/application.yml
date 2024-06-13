@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: ssis-ch06-ex1
+  jpa:
+    show-sql: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/spring_1?useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: root
+    password: password
+    initialization-mode: always
+    driver-class-name: com.mysql.cj.jdbc.Driver
+server:
+  port: 8110
+logging:
+  level:
+    com.woojang.service.ch06ex1.repositories.UserRepository.findUserByUsername: DEBUG
+    org:
+      springframework:
+        security: DEBUG
