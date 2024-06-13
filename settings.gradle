@@ -1,4 +1,4 @@
 rootProject.name = 'spring-security-in-action'
 include 'ch02_ex1', 'ch02_ex2', 'ch02_ex3', 'ch02_ex5'
 include 'ch03_ex1', 'ch03_ex2'
-include 'ch05_ex1'
+include 'ch05_ex1', 'ch05_ex2'
