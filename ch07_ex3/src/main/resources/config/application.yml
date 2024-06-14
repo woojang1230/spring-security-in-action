@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: ssis-ch07-ex3
+server:
+  port: 8123
+logging:
+  level:
+    com.woojang.service.ch06ex1.repositories.UserRepository.findUserByUsername: DEBUG
+    org:
+      springframework:
+        security: DEBUG
