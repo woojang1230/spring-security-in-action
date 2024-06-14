@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: ssis-ch05-ex2
+server:
+  port: 8102
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG

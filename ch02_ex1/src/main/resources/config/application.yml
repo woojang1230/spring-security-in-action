@@ -1,5 +1,5 @@
 spring:
   application:
-    name: spring-security-in-action
+    name: ssis-ch02-ex1
 server:
   port: 8081

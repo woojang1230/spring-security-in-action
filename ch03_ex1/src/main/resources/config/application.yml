@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: ssis-ch03-ex1
+server:
+  port: 8091
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG
