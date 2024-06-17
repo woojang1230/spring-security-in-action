@@ -9,8 +9,9 @@
 - mvcMatchers(HttpMethos method, String... patterns) : 제한을 적용할 HTTP 방식과 경로 모두 설정.
 - mvcMatchers(String... patterns) : 제한을 적용할 경로 설정.
 
-```java
+> Spring Boot Security에서는 CSRF(Cross-Site Request Forgery) 보호를 기본적으로 활성화하여, POST, PUT, DELETE와 같은 상태 변화를 일으킬 수 있는 HTTP 메서드에 대한 요청을 차단한다. 그래서 테스트를 위해서 CSRF를 잠시 비활성화한다.
 
+```java
 @Configuration
 public class ProjectWebConfig extends WebSecurityConfigurerAdapter {
     @Override
