@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: ssis-ch09-ex1
+server:
+  port: 8191
