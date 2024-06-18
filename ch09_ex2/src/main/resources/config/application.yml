@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: ssis-ch09-ex2
+server:
+  port: 8192
+authorization:
+  key: coldplay
