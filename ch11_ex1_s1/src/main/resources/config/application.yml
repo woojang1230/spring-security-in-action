@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: ssis-ch11-ex1-s1
+  jpa:
+    show-sql: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/spring_2?useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: root
+    password: password
+    initialization-mode: always
+    driver-class-name: com.mysql.cj.jdbc.Driver
+server:
+  port: 9111
