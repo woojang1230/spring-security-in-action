@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: ssis-ch10-ex2
+server:
+  port: 9102

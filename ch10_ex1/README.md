@@ -1,16 +1,8 @@
-# Getting Started
+# 버전
 
-### Reference Documentation
+- SpringBoot : `2.3.0.RELEASE`
+- Java : `11`
+- Gradle : `6.3`
 
-For further reference, please consider the following sections:
-
-* [Official Gradle documentation](https://docs.gradle.org)
-* [Spring Boot Gradle Plugin Reference Guide](https://docs.spring.io/spring-boot/docs/3.3.0/gradle-plugin/reference/html/)
-* [Create an OCI image](https://docs.spring.io/spring-boot/docs/3.3.0/gradle-plugin/reference/html/#build-image)
-
-### Additional Links
-
-These additional references should also help you:
-
-* [Gradle Build Scans – insights for your project's build](https://scans.gradle.com#gradle)
-
+# 10.1 애플리케이션에 CSRF(사이트 간 요청 위조) 보호 적용(1) 
+## 10.1.1 간단한 CSRF 작동 방식 탐구
