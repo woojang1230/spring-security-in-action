@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: ssis-ch11-ex1-s2
+  main:
+    allow-bean-definition-overriding: true
+server:
+  port: 9112
+auth:
+  server:
+    base:
+      url: http://localhost:9111
+jwt:
+  signing:
+    key: ymLTU8rq83j4fmJZj60wh4OrMNuntIj4fmJ
